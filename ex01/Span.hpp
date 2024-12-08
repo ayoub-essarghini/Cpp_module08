@@ -3,11 +3,10 @@
 #include <vector>
 #include <algorithm>
 #include <limits>
-using std::vector;
 class Span
 {
 private:
-    vector<int> container;
+    std::vector<int> container;
     unsigned int N;
 public:
     Span();
