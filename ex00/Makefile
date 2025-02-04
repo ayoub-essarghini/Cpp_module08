@@ -1,10 +1,11 @@
 NAME= easyfind
 CXX = c++
+INCLUDES = easyfind.hpp
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 SRCS = $(wildcard *.cpp)
 OBJS = $(SRCS:.cpp=.o)
 
-all: $(NAME)
+all: $(NAME) $(INCLUDES)
 
 $(NAME): $(OBJS)
 	$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJS)

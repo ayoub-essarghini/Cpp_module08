@@ -1,12 +1,11 @@
 #include "easyfind.hpp"
 
-
 int main()
 {
     int num = 5;
     std::vector<int> container;
-    container.push_back(0);
-    container.push_back(15);
+    container.push_back(2);
+    container.push_back(25);
     container.push_back(1);
     container.push_back(6);
 
@@ -14,17 +13,11 @@ int main()
 
     try
     {
-            it = easyfind(container,num);
-    std::cout << *it << std::endl;
+        it = easyfind(container, num);
+        std::cout << *it << std::endl;
     }
-    catch(const std::exception& e)
+    catch (const std::exception &e)
     {
         std::cerr << e.what() << '\n';
     }
-    
-
-
-    
-
-
 }

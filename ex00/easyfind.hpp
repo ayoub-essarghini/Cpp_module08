@@ -2,16 +2,14 @@
 #include <iostream>
 #include <vector>
 template <typename T>
-typename T::iterator easyfind(T& container,int num)
+typename T::iterator easyfind(T &container, int num)
 {
     typename T::iterator it = container.begin();
-    typename T::iterator it2 = container.end();
-
-    while (it != container.end())
+    for (; it != container.end();it++)
     {
         if (*it == num)
             return it;
-        it++;
     }
-    return it2;
+    throw std::runtime_error("Cannot find occurence");
+    return it;
 }

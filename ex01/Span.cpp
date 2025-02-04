@@ -25,6 +25,8 @@ unsigned int Span::longestSpan()
 
     int minElement = *std::min_element(container.begin(), container.end());
     int maxElement = *std::max_element(container.begin(), container.end());
+    std::cout << "min element : "<< minElement << std::endl;
+    std::cout << "max element : "<< maxElement << std::endl;
 
     return abs(maxElement - minElement);
 }
