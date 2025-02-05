@@ -1,5 +1,6 @@
 {
     "files.associations": {
+        "*.c": "c",
         "array": "cpp",
         "atomic": "cpp",
         "bit": "cpp",
@@ -57,6 +58,7 @@
         "text_encoding": "cpp",
         "cinttypes": "cpp",
         "typeinfo": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "*.tpp": "cpp"
     }
 }
